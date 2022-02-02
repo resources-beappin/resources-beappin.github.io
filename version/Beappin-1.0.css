@@ -1,0 +1,100 @@
+:root {
+	--modal-duration: 200ms;
+}
+
+.bp-modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+}
+
+.bp-modal.active {
+	opacity: 1;
+	transition: opacity var(--modal-duration);
+}
+
+.bp-modal.remove {
+	opacity: 0;
+	transition: opacity var(--modal-duration);
+}
+
+.bp-modal-box {
+	width: 100%;
+	height: 100%;
+	max-width: 500px;
+	max-height: 500px;
+	background: var(--sidebar-color);
+	color: var(--text-color);
+	border-radius: 10px;
+	padding: 20px;
+	position: relative;
+}
+
+.bp-title {
+	text-align: center;
+}
+
+.bp-modal .option {
+	display: flex;
+	align-items: center;
+	position: relative;
+	user-select: none;
+}
+
+.bp-modal .option input {
+	margin-right: 10px;
+}
+
+.bp-modal .bp-modal-box i.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 10px;
+}
+
+.bp-modal .bp-modal-box i.close:hover {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.alert-msg {
+	width: calc(100% - 30px);
+	margin-left: 15px;
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	opacity: 0.8;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+	display: none;
+	margin-bottom: 10px;
+}
+
+.alert-msg:hover {
+	opacity: 1;
+}
+
+.alert-msg.info {
+	background: rgba(50, 50, 255, 0.5);
+}
+
+.alert-msg.info::before {
+	content: "\f05a";
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 400;
+	font-size: 30px;
+	margin-right: 7px;
+}
