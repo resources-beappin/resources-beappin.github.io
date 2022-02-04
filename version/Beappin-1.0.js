@@ -203,6 +203,9 @@ const Beappin = {
                               return conceptoOptions;
                          }
                     }
+               },
+               index: {
+                    submitError: window.localStorage.getItem('SubmitError') ? window.localStorage.getItem('SubmitError') : null
                }
           }
      },
@@ -251,6 +254,3 @@ document.querySelectorAll('form').forEach(f => {
         window.localStorage.setItem('onSubmitForm', 'true');
     })
 });
-
-console.log(document.querySelector("#id-col-main\\  > form > div.form-group.col-sm-10.offset-sm-1.text-danger.col-md-10.offset-md-1.col-lg-10.offset-lg-1.col-xl-10.offset-xl-1.mt-5.mt-md-5.px-4 > p").innerText);
-
