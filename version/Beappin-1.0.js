@@ -245,3 +245,9 @@ if(window.localStorage.getItem('BeappinThemeConfig') !== null) {
           }
      }
 }
+
+document.querySelectorAll('form').forEach(f => {
+    f.addEventListener('submit', () => {
+        window.localStorage.setItem('onSubmitForm', 'true');
+    })
+});
