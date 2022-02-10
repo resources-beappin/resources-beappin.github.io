@@ -111,6 +111,9 @@
 	right: 0;
 	bottom: 0;
 	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .bp-modal-docClear .bp-modal-box {
