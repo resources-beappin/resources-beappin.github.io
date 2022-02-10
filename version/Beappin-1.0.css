@@ -116,7 +116,13 @@
 	justify-content: center;
 }
 
-.bp-modal-docClear .bp-modal-box {
+.bp-modal-docClear .bp-modal-box-docClear {
 	background: rgba(0, 0, 0, 0.25);
 	color: rgba(0, 0, 0, 0.8)
+}
+
+.bp-modal-docClear .bp-modal-box-docClear .title {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
