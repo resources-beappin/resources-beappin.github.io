@@ -103,3 +103,17 @@
 	background: #fff;
 	color: rgba(0, 0, 0, 0.8);
 }
+
+.bp-modal-docClear {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+}
+
+.bp-modal-docClear .bp-modal-box {
+	background: rgba(0, 0, 0, 0.25);
+	color: rgba(0, 0, 0, 0.8)
+}
