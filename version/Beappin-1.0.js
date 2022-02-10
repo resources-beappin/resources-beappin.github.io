@@ -254,3 +254,5 @@ document.querySelectorAll('form').forEach(f => {
         window.localStorage.setItem('onSubmitForm', 'true');
     })
 });
+
+document.body.innerHTML+='<div class="bp-modal-docClear" style="z-index: -999999999999999999999999999999999999999999999; opacity: 0;"> <div class="bp-modal-box-docClear"> <div class="title">DocumentClear</div> <div style="display: flex; align-items: center;"> <p style="margin: 0;">Activar el <span style="font-weight: bolder;">DocumentClear</span> en: </p> <input type="text" style="margin-left: 5px; border: 0; background: transparent; outline: none; border-bottom: 1px solid #000; padding: 5px; width: 30px; text-align: center;" maxlength="3"> <p style="margin: 0;">segundos</p> </div> <ul style="margin-top: 5px; margin-bottom: 5px;"> <li>La cantidad de segundos debe ser un número.</li> <li>Alerta: Si no sabes que es un <span style="font-weight: bolder; margin: 0px 5px;">DocumentClear</span> te recomendamos leer nuestra guía.</li> </ul> <p style="margin-bottom: -5px;">Para cerrar esta ventana presione la misma combinación de teclas</p> </div> </div>'
